@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+p{
+    font-size: 18px;
+}
+.buy{
+    background-color:hsl(322, 100%, 66%);
+    color:rgb(255,255 255);
+    text-align:center;
+    width:300px;
+    padding: 10px;
+    border:2px solid hsl(322, 100%, 66%);
+    border-radius: 25px;
+}
+header{
+    background-color: hsl(193, 100%, 96%);
+    background-image: url('guide/images/bg-hero-desktop.svg');
+    padding:60px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+#main_head{
+    display:grid;
+}
+#main_head #logo{
+    grid-column: 1;
+    grid-row: 1;
+}
+#main_head #trial{
+    grid-column: 2;
+    grid-row: 1;
+    text-align:center;
+    padding:5px 10px;
+    border: 4px solid hsl(214, 19%, 93%);
+    border-radius:15px;
+    color:hsl(208, 11%, 55%);
+}
+#main_head button:hover{
+    background-color:rgb(70, 59, 59);
+    transition:2s;
+    scale: 10px;
+}
+#logo img{
+    width:20%;
+}
+.images img{
+    width:400px;
+}
+#main_content, .container #first_section, .container #second_section, .container #third_section{
+    display:grid;
+}
+.text, .container #second_section .images{
+    grid-column:1;
+    grid-row: 1;
+    padding:20px;
+}
+.images, .container #second_section .text{
+    grid-column:2;
+    grid-row:1;
+    padding:20px;
+}
+.text{
+    margin:auto;
+}
+.container{
+    padding:60px;
+}
+.container section{
+    margin-top:30px;
+    margin-bottom: 30px;
+    padding:30px;
+    border:6px solid hsl(214, 19%, 93%);
+    border-radius:30px;
+}
+.container p{
+    font-weight: 400;
+    font-size:14px;
+}
+
+
+
+footer{
+    background-color:hsl(192, 100%, 9%);
+    padding:60px;
+    color:rgb(255,255,255);
+    display:grid;
+    font-size: 14px;
+    gap:50px;
+}
+footer #logo_two img{
+    width:100px;
+    margin:20px;
+}
+footer img{
+    margin:0 10px 0 0 ;
+}
+footer #logo_two{
+    grid-column: 1;
+    grid-row:1;
+}
+footer #info{
+    grid-column: 1;
+    grid-row:2;
+    margin: auto;
+}
+footer #nav_one{
+    grid-column: 2;
+    grid-row:2;
+    margin:auto;
+}
+footer #nav_two{
+    grid-column:3;
+    grid-row:2;
+    margin:auto;
+}
+footer #nav_three{
+    grid-column: 4;
+    grid-row:2;
+}
+
+footer ul {
+    list-style-type: none;
+}
+footer ul li{
+    margin:0 0 0 -22px;
+    padding:5px;
+}
+footer a{
+    color:rgb(255,255,255);
+}
+ a{
+    text-decoration: none;
+ }  
+ footer #nav_three #text  p{
+    font-size:10px;
+ }
+.container, footer{
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+
+
+@media screen and (max-width:675px){
+    p{
+        font-size: 14px;
+    }
+    header{
+        background-color: hsl(193, 100%, 96%);
+        background-image: url('guide/images/bg-hero-mobile.svg');
+        padding:30px;
+    }
+    .images img{
+        width:250px;
+    }
+    #main_content, .container #first_section, .container #second_section, .container #third_section{
+        display:block;
+    }
+    .text, .container #second_section .images, .images, .container #second_section .text{
+        padding:20px;
+    }
+    .container{
+        padding:20px;
+    }
+    .container section{
+        margin: 20px 0;
+        padding:15px;
+        border:3px solid hsl(214, 19%, 93%);
+        border-radius:30px;
+    }
+    .buy{
+        background-color:hsl(322, 100%, 66%);
+        color:rgb(255,255 255);
+        text-align:center;
+        width:150px;
+        padding: 10px;
+        border:1px solid hsl(322, 100%, 66%);
+        border-radius: 25px;
+    }
+    .text{
+        text-align:center;
+    }
+
+    footer{
+        background-color:hsl(192, 100%, 9%);
+        padding:20px;
+        color:rgb(255,255,255);
+        display:block;
+        font-size: 14px;
+    }
+    footer #logo_two img{
+        width:100px;
+    }
+    footer #nav_three #icon{
+        margin: 0 50%;
+        display:flex;
+    }
+    footer #nav_three #icon nav a{
+        gap:10px;
+    }  
+}
