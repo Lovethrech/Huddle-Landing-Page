@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+    padding:0;
+    margin:0;
+}
+p{
+    font-size: 18px;
+}
+.buy{
+    background-color:hsl(322, 100%, 66%);
+    color:rgb(255,255 255);
+    text-align:center;
+    width:300px;
+    padding: 10px;
+    border:2px solid hsl(322, 100%, 66%);
+    border-radius: 25px;
+}
+header{
+    background-color: hsl(193, 100%, 96%);
+    background-image: url('guide/images/bg-hero-desktop.svg');
+    padding:60px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+#main_head{
+    display:grid;
+}
+#main_head #logo{
+    grid-column: 1;
+    grid-row: 1;
+}
+#main_head #trial{
+    grid-column: 2;
+    grid-row: 1;
+    text-align:center;
+    padding:5px 10px;
+    border: 4px solid hsl(214, 19%, 93%);
+    border-radius:15px;
+    color:hsl(208, 11%, 55%);
+}
+#main_head button:hover{
+    background-color:rgb(70, 59, 59);
+    transition:2s;
+    scale: 10px;
+}
+#logo img{
+    width:20%;
+}
+.images img{
+    width:400px;
+}
+#main_content, .container #first_section, .container #second_section, .container #third_section{
+    display:grid;
+}
+.text, .container #second_section .images{
+    grid-column:1;
+    grid-row: 1;
+    padding:20px;
+}
+.images, .container #second_section .text{
+    grid-column:2;
+    grid-row:1;
+    padding:20px;
+}
+.text{
+    margin:auto;
+}
+.container{
+    padding:60px;
+}
+.container section{
+    margin-top:30px;
+    margin-bottom: 30px;
+    padding:30px;
+    border:6px solid hsl(214, 19%, 93%);
+    border-radius:30px;
+}
+.container p{
+    font-weight: 400;
+    font-size:14px;
+}
+
+
+
+footer{
+    background-color:hsl(192, 100%, 9%);
+    padding:40px;
+    color:rgb(255,255,255);
+    font-size: 14px;
+}
+.container, footer{
+    font-family: 'Open Sans', sans-serif;
+}
+footer #nav_two #text p{
+    margin:auto;
+    font-size: 10px;
+}
+a{
+    text-decoration: none;
+    color:rgb(255,255,255);
+ } 
+footer ul {
+    list-style-type: none;
+}
+footer #logo_two img{
+    width:100px;
+    margin:20px;
+}
+footer img{
+    margin:0 10px 0 0 ;
+}
+.last_nav{
+    display:grid;
+    gap:20px;
+}
+.last_nav #info{
+    grid-column: 1;
+    grid-row:1;
+}
+.last_nav #list_one{
+    grid-column: 2;
+    grid-row:1;
+}
+.last_nav #list_two{
+    grid-column: 3;
+    grid-row: 1;
+}
+.last_nav #nav_two{
+    grid-column: 4;
+    grid-row:1;
+}
+.last_nav #nav_two #icon{
+    margin: auto;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+@media screen and (max-width:675px){
+    p{
+        font-size: 14px;
+    }
+    header{
+        background-color: hsl(193, 100%, 96%);
+        background-image: url('guide/images/bg-hero-mobile.svg');
+        padding:30px;
+    }
+    .images img{
+        width:250px;
+    }
+    #main_content, .container #first_section, .container #second_section, .container #third_section{
+        display:block;
+    }
+    .text, .container #second_section .images, .images, .container #second_section .text{
+        padding:20px;
+    }
+    .container{
+        padding:20px;
+    }
+    .container section{
+        margin: 20px 0;
+        padding:15px;
+        border:3px solid hsl(214, 19%, 93%);
+        border-radius:30px;
+    }
+    .buy{
+        background-color:hsl(322, 100%, 66%);
+        color:rgb(255,255 255);
+        text-align:center;
+        width:150px;
+        padding: 10px;
+        border:1px solid hsl(322, 100%, 66%);
+        border-radius: 25px;
+    }
+    .text{
+        text-align:center;
+    }
+
+    footer{
+        padding:30px;
+        font-size: 14px;
+    }
+    footer #nav_two #text p{
+        margin:auto;
+        font-size: 8px;
+        text-align:center;
+    }
+    .last_nav{
+        display:block;
+        gap:20px;
+    }
+}
