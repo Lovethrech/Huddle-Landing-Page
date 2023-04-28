@@ -151,6 +151,9 @@ footer img{
         background-image: url('bg-hero-mobile.svg');
         padding:30px;
     }
+    #logo img{
+        width:40%;
+    }
     .images img{
         width:250px;
     }
